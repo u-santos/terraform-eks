@@ -1,7 +1,7 @@
 locals {
   tags = {
-    Projeto      = "poc-plataform"
+    Project      = "poc-plataform"
     Organization = "sambatech"
-    Environment  = "development"
+    Environment  = var.environment
   }
 }
