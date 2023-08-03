@@ -6,12 +6,12 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "49f6-terraform-project-tfstate"
+    bucket = "49f1-terraform-project-tfstate"
     key    = "dev/terraform.tfstate"
-    region = "us-east-1"
+    region = "us-east-2"
   }
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-2"
 }
