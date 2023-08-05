@@ -15,12 +15,17 @@ resource "aws_route_table" "eks_public_rtb" {
 }
 
 
-resource "aws_route_table_association" "eks_rtb_association_1a" {
-  subnet_id      = aws_subnet.eks_public_subnet_1a.id
+resource "aws_route_table_association" "eks_rtb_association_2a" {
+  subnet_id      = aws_subnet.eks_public_subnet_2a.id
   route_table_id = aws_route_table.eks_public_rtb.id
 }
 
-resource "aws_route_table_association" "eks_rtb_association_1b" {
-  subnet_id      = aws_subnet.eks_public_subnet_1b.id
+resource "aws_route_table_association" "eks_rtb_association_2b" {
+  subnet_id      = aws_subnet.eks_public_subnet_2b.id
+  route_table_id = aws_route_table.eks_public_rtb.id
+}
+
+resource "aws_route_table_association" "eks_rtb_association_2c" {
+  subnet_id      = aws_subnet.eks_public_subnet_2c.id
   route_table_id = aws_route_table.eks_public_rtb.id
 }

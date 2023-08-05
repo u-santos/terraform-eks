@@ -11,6 +11,7 @@ module "eks_cluster" {
   source           = "./modules/cluster"
   project_name     = var.project_name
   tags             = local.tags
-  public_subnet_1a = module.eks_network.subnet_pub_1a
-  public_subnet_1b = module.eks_network.subnet_pub_1b
+  public_subnet_2a = module.eks_network.subnet_pub_2a
+  public_subnet_2b = module.eks_network.subnet_pub_2b
+  public_subnet_2c = module.eks_network.subnet_pub_2c
 }
