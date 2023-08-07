@@ -31,9 +31,12 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_bucket_path"></a> [bucket\_path](#input\_bucket\_path) | Path to store the terraform state, ex: dev/terraform.tfstate | `string` | `"dev/terraform.tfstate"` | no |
 | <a name="input_cidr_block"></a> [cidr\_block](#input\_cidr\_block) | Networking CIDR block to be used by vpc. | `string` | n/a | yes |
 | <a name="input_environment"></a> [environment](#input\_environment) | Environment where the resource is being deployed | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Project name to be used on name resources (Name tag) | `string` | n/a | yes |
+| <a name="input_region"></a> [region](#input\_region) | AWS region to create resources. | `string` | n/a | yes |
+| <a name="input_tf_state_bucket_name"></a> [tf\_state\_bucket\_name](#input\_tf\_state\_bucket\_name) | S3 bucket name that stores the Terraform State file. | `string` | n/a | yes |
 
 ## Outputs
 
